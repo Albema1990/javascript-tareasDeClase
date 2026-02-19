@@ -48,16 +48,25 @@
 
 // Ejercicio 4 clase 02
 
-let edad = 38;
+// let edad = 38;
 
-if (typeof edad == "number"){
-    if(edad < 13){
-        console.log("Niño");
-    }else if (edad < 18){
-        console.log("Adolescente");
-    }else {
-        console.log("Adulto");
-    }
-}else {
-    console.log("Valor equivocado, inserta un numero");
-}
+// if (typeof edad == "number"){
+//     if(edad < 13){
+//         console.log("Niño");
+//     }else if (edad < 18){
+//         console.log("Adolescente");
+//     }else {
+//         console.log("Adulto");
+//     }
+// }else {
+//     console.log("Valor equivocado, inserta un numero");
+// }
+
+// let edad =19;
+// let permiso = true;
+
+// if (edad >= 18 && permiso){
+//     console.log("Puedes pasar");
+// }else {
+//     console.log("No puedes pasar");
+// }

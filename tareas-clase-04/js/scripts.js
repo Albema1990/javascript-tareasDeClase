@@ -22,10 +22,10 @@
 
 // saludar("María");
 
-function sumar(num1, num2) {
-  const suma = num1 + num2;
-  console.log("La suma es:", suma);
-}
+// function sumar(num1, num2) {
+//   const suma = num1 + num2;
+//   console.log("La suma es:", suma);
+// }
 
-sumar(5, 10);
-sumar(36, 30);
+// sumar(5, 10);
+// sumar(36, 30);

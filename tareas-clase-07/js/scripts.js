@@ -1,5 +1,4 @@
 // --- getElementById ---
-
 // const titulo = document.getElementById("titulo");
 
 // console.log(titulo); // muestra todo el objeto
@@ -14,7 +13,6 @@
 // console.log(elemento.textContent);
 
 // --- getElementByClassName ---
-
 // const textos = document.getElementsByClassName("texto");
 // console.log(textos);
 // console.log(textos.length);
@@ -31,9 +29,41 @@
 // subtitulo.style.color = "red";
 // subtitulo.style.fontSize = "5px";
 
-const textos = document.getElementsByClassName("texto");
+// const textos = document.getElementsByClassName("texto");
 
-for (let i = 0; i < textos.length; i++) {
-  textos[i].style.color = "pink";
-  textos[i].style.fontSize = "30px";
-}
+// for (let i = 0; i < textos.length; i++) {
+//   textos[i].style.color = "pink";
+//   textos[i].style.fontSize = "30px";
+// }
+
+// --- getElementByTagName ---
+// const textos = document.getElementsByTagName("p"); // trae todos los elementos con la etiqueta p
+
+// for (let i = 0; i < textos.length; i++) {
+//   // recorre el array de elementos
+//   textos[i].style.color = "blue"; // cambia el color de cada elemento a azul
+// }
+
+// --- querySelector ---
+
+// const parrafo = document.querySelector("#otro-parrafo");
+
+// const encabezado = document.querySelector("h1");
+// encabezado.textContent = "Modificación del encabezado";
+// const primerP = document.querySelector("div p");
+// primerP.textContent = "Cambiamos el primer párrafo";
+
+// --- querySelectorAll ---
+// const parrafos = document.querySelectorAll("p");
+// console.log(parrafos);
+
+// parrafos.forEach(function(parrafo){
+//   parrafo.style.color = "green";
+// });
+
+const parrafos = document.querySelectorAll("P");
+
+parrafos.forEach(function (parrafo) {
+  parrafo.style.color = "red";
+  parrafo.textContent = "Cambiamos el texto de los párrafos";
+});

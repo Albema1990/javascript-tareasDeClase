@@ -19,5 +19,17 @@
 
 // -- classList.replace() --
 
-const p = document.querySelector("p");
-p.classList.replace("item", "destacado");
+// const p = document.querySelector("p");
+// p.classList.replace("item", "destacado");
+
+// -- createElement() --
+const p = document.createElement("p");
+p.texContent ="Nuevo párrafo";
+p.classList.add("activo");
+
+const body = document.body;
+body.append(p);
+body.prepend(p);
+
+const div = document.querySelector("#contenedor");
+div.append(p);

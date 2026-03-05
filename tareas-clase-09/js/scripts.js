@@ -69,9 +69,46 @@
 //   console.log("No se redirige a Google");
 // });
 
-const form = document.querySelector("#formulario");
+// -- preventDefault --
+// const form = document.querySelector("#formulario");
 
-form.addEventListener("submit", (Event) => {
-  Event.preventDefault();
-  console.log("Formulario no se envía");
+// form.addEventListener("submit", (Event) => {
+//   Event.preventDefault();
+//   console.log("Formulario no se envía");
+// });
+
+// const input = document.querySelector("#email");
+// console.log(input.value);
+
+// if (input.value == "") {
+//   input.style.border = "1px solid red";
+
+//   const p = (document.textContent = "Error. Email esta vacío");
+//   p.style.color = "red";
+
+//   input.after(p);
+
+// -- stopPropagation
+// const contenedor = document.querySelector("#contenedor");
+
+// contenedor.addEventListener("click", () => {
+//   console.log("Click en el contenedor");
+// });
+
+// const item = document.querySelector("#item");
+// item.addEventListener("click", (event) => {
+//   event.stopPropagation();
+//   console.log("Click en el item");
+// });
+
+// --- EJEMPLO FINAL ---
+
+const boton = document.querySelector("#btnSaludar");
+const contenedor = document.querySelector("#contenedor");
+
+boton.addEventListener("click", () => {
+  const item = document.createElement("p");
+  item.textContent = "Item dinámico";
+  item.classList.add("item");
+  contenedor.appendChild(item);
 });

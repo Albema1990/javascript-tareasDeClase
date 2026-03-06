@@ -8,3 +8,7 @@
 - **Eventos** ----> esperar que el usuario haga algo
 - **Objetos literales** ----> agrupar datos relacionadas
 - **Array** ----> agrupar datos similares
+
+## Funciones
+
+`` js

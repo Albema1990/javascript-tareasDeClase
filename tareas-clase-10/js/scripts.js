@@ -76,10 +76,9 @@
 // const [a, b, ...nums] = numeros;
 // console.log(a, b, nums);
 
-const nombres = ["Ana", "Juan", "Pedro", "Lucía"];
+// const nombres = ["Ana", "Juan", "Pedro", "Lucía"];
 
-const [primero, ...resto] = nombres;
+// const [primero, ...resto] = nombres;
 
-console.log(primero);
-console.log(resto);
-
+// console.log(primero);
+// console.log(resto);

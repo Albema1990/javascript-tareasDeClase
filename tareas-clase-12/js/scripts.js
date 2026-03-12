@@ -67,10 +67,35 @@
 //   }, 2000);
 // });
 
-// console.log(promesa);
+// promesa
+//     .then((response) => {
+//         console.log(response);
+//     })
+//     .catch((error) => {
+//         console.error(error);
+//     });
 
-// -- setInterval -- (ejecuta una función cada cierto tiempo)
+// // -- setInterval -- (ejecuta una función cada cierto tiempo)
 
-setInterval(() => {
-  console.log("Esto se repite cada 2 segundos");
-}, 2000);
+// setInterval(() => {
+//   console.log("Esto se repite cada 2 segundos");
+// }, 2000);
+
+const promesaEjercicio = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    const numero = 5;
+    if (numero > 10) {
+      resolve("El número es mayor que 10");
+    } else {
+      reject("El número es menor o igual a 10");
+    }
+  }, 2000);
+});
+
+promesaEjercicio
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((error) => {
+    console.error(error);
+  });

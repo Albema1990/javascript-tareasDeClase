@@ -50,7 +50,10 @@ const promise = fetch("https://fakestoreapi.com/products");
 
 promise
   .then((response) => {
-    console.log(response);
+    console.log(response.json());
+    // if(response.status === 200){
+    //    console.log("Status: Ok");
+    // }
   })
   .catch((error) => {
     console.error(error);

@@ -35,16 +35,68 @@
 
 // -------------------------------
 
-function procesarPedido() {
-  return new Promise((resolve) => {
+// function procesarPedido() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("Pedido procesado");
+//     }, 2000);
+//   });
+// }
+
+// console.log("Iniciar pedido");
+
+// procesarPedido().then((pedido) => {
+//   console.log(pedido);
+// });
+
+// -------------------------------
+
+// function validarPago(){
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const success = true;
+
+//       if (success){
+//         resolve({success: true, operacion: 123});
+//       }else{
+//         reject({error: true, operacion: 244});
+//       }
+//     }, 2000);
+//   })
+// }
+
+// validarPago().then((response) => {
+//   console.log(response);
+// }).catch((error) => {
+//   console.log(error);
+// })
+
+// -----------------------------------------------------------------------
+
+// function login(usuario) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("Hola, " + usuario);
+//     }, 1500);
+//   });
+// }
+
+// async function iniciarSeccion() {
+//   const mensaje = await login("María");
+// }
+
+function guardarPerfil() {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("Pedido procesado");
-    }, 2000);
+      resolve("Perfil guardado");
+    }, 1000);
   });
 }
 
-console.log("Iniciar pedido");
+async function validar() {
+  console.log("Guardando...");
+  const res = await guardarPerfil();
+  console.log(res);
+}
 
-procesarPedido().then((pedido) => {
-  console.log(pedido);
-});
+validar();

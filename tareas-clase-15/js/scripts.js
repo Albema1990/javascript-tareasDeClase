@@ -1,3 +1,14 @@
+function getFavoritos(favoritos) {
+  const texto = localStorage.getItem("favoritos");
+  if (texto == null) return [];
+}
+
+function setFavoritos(favoritos = []) {
+  localStorage.setItem("favorites", JSON.stringify(favoritos));
+}
+
+// setFavorites([1 ,5, 3]);
+
 async function mostrarProductos() {
   const response = await fetch("https://fakestoreapi.com/products/");
   const products = await response.json();
@@ -25,8 +36,6 @@ async function mostrarProductos() {
     card.appendChild(imagen);
     card.appendChild(h3);
     card.appendChild(price);
-
-    console.log(card);
 
     container.appendChild(card);
   });
